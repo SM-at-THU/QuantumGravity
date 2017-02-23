@@ -10,7 +10,7 @@ $$ \square\phi-m^{2}\phi-\xi R\phi=0 $$
 Here $g^{00}=1$**?**
 
 - inner product for a spacelike hypersurface $\Sigma$ with induced metric $\gamma_{ij}$:  
-$$ (\phi_{1},\phi_{2})=-i\int_{\Sigma}\left(\phi_{1}\nabla_{\mu}\phi_{2}^{*}-\phi_{2}^{*}\nabla_{\mu}\phi_{1}\right)n^{\mu}\sqrt{\gamma}d^{n-1}x $$
+$$ (\phi\_{1},\phi_{2})=-i\int_{\Sigma}\left(\phi_{1}\nabla_{\mu}\phi_{2}^{*}-\phi_{2}^{*}\nabla_{\mu}\phi_{1}\right)n^{\mu}\sqrt{\gamma}d^{n-1}x $$
 
 > What we lost in curved spacetime is any reason to prefer one set of modes over any other.
 > Different observers disagree with each other on how many particles are observed in certain states, due to different sets of modes, i.e. sets of orthonormal solutions of the equation of motion. 
