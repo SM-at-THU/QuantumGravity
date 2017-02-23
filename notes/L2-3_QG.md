@@ -33,7 +33,8 @@ $$TdS=dM-\Phi dQ,\quad T\equiv\frac{r_{+}-r_{-}}{4\pi r_{+}^{2}}, \quad \Phi=\fr
 `Higher curvature corrections in the BH entrophy may lead to violation of the 2nd law of thermodynamics.`
 
 - Black holes must have enormous of states (see Chp 9 of Carroll's):  
-$$ S_{BH}\sim 10^{90}\left(\frac{M}{10^{6}M_{\odot}}\right),\quad S_{M}\sim 10^{88}\quad\text{for all matter other than BHs within one Hubble radius, i,e, number of relativistic particles} $$
+$$ S_{BH}\sim 10^{90}\left(\frac{M}{10^{6}M_{\odot}}\right),\quad S_{M}\sim 10^{88}$$
+($S_{M}$ is the entropy for all matter other than BHs within one Hubble radius, i,e, number of relativistic particles)
 
 > Black hole entropy is a rare and important gift from nature: an infrared constraint on the ultraviolet completion, that we should take very seriously in trying to quantize gravity.
 
@@ -63,7 +64,7 @@ $$t\sim t+i\beta,\quad \beta=8\pi M,\quad T=\frac{1}{8\pi M}$$
 $$G_{\beta}(\tau,x,\phi)=-\frac{1}{Z}\mathrm{Tr}e^{-\beta H+\beta\Omega J}T_{E}[O(\tau,x,\phi)O(0,0,0)]=G_{\beta}(\tau-\beta,x,\phi+\beta\Omega)$$
 $$(t,\phi)\sim(t+i\beta,\phi-i\beta\Omega)$$
  - (b) expansion with $r=r_{+}(1+\epsilon^{2})$ at $\theta=\pi/2$:
-$$ds^{2}=\frac{4r_{+}^{3}}{r_{+}-r_{-}}d\epsilon^{2}+\frac{1}{r_{+}^{2}}\left(adt-(r_{+}^{2}+a^{2})d\phi\right)^{2}\\
+$$ds^{2}=\frac{4r_{+}^{3}}{r_{+}-r_{-}}d\epsilon^{2}+\frac{1}{r_{+}^{2}}\left(adt-(r_{+}^{2}+a^{2})d\phi\right)^{2}\\\\
 +\left[-\left(1-\frac{r_{-}}{r_{+}}\right)(dt-ad\phi)^{2}-\frac{2}{r_{+}^{2}}\left(adt-(r_{+}^{2}+a^{2})d\phi\right)^{2}-4(adt-(r_{+}^{2}+a^{2})d\phi)+2r_{+}^{2}d\theta^{2})\right]\epsilon^{2}+\cdots$$
  - (c) set $adt-(r_{+}^{2}+a^{2})d\phi=0$, i.e. $\tilde{\phi}=(r_{+}^{2}+a^{2})\phi-at=const.$, and $d\theta=0$, we have  
 $$d\tilde{s}^{2}=d\epsilon^{2}-\frac{1}{4}\left(\frac{r_{+}-r_{-}}{r_{+}^{2}+a^{2}}\right)^{2}\epsilon^{2}dt^{2} $$
