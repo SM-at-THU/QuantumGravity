@@ -40,7 +40,7 @@ where $\sigma\_{\epsilon}=g\_{\mu]nu}(x\_{1}^{\mu}-x\_{2}^{\mu})(x\_{1}^{\nu}-x\
  $$ x^{2}(\tau)=t^{2}(\tau)+\alpha^{2} $$
  
  - new coodinates ($\eta,\xi$) for $x>|t|$ (Rindler space):  
- $$ t=\frac{1}{a}e^{a\xi}\sinh(a\eta),\quad x=\frac{1}{a}e^{a\xi}\cosh(a\eta)\\
+ $$ t=\frac{1}{a}e^{a\xi}\sinh(a\eta),\quad x=\frac{1}{a}e^{a\xi}\cosh(a\eta)\\\\
  ds^{2}=e^{2a\xi}(-d\eta^{2}+d\xi^{2}) $$
  
  - the constant acceleration path is given by  
