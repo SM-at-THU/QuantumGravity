@@ -10,15 +10,15 @@ $$ \square\phi-m^{2}\phi-\xi R\phi=0 $$
 Here $g^{00}=1$**?**
 
 - inner product for a spacelike hypersurface $\Sigma$ with induced metric $\gamma_{ij}$:  
-$$ (\phi_{1},\phi_{2})=-i\int_{\Sigma}\left(\phi_{1}\nabla_{\mu}\phi_{2}^{*}-\phi_{2}^{*}\nabla_{\mu}\phi_{1}\right)n^{\mu}\sqrt{\gamma}d^{n-1}x $$
+$$ (\phi_{1},\phi_{2})=-i\int_{\Sigma}\left(\phi_{1}\nabla_{\mu}\phi_{2}^{\*}-\phi_{2}^{\*}\nabla_{\mu}\phi_{1}\right)n^{\mu}\sqrt{\gamma}d^{n-1}x $$
 
 > What we lost in curved spacetime is any reason to prefer one set of modes over any other.
 > Different observers disagree with each other on how many particles are observed in certain states, due to different sets of modes, i.e. sets of orthonormal solutions of the equation of motion. 
 > **what we cannot  decide on a natural set of basis modes that all inertial observers would identify as particles. **
 
 - Bogolubov transformation (between different sets of modes $g$ and $f$) :  
-$$ g_{i}=\sum_{j}(\alpha_{ij}f_{j}+\beta_{ij}f_{j}^{*}),\quad f_{i}=\sum_{j}(\alpha_{ji}^{*}g_{j}-\beta_{ji}g_{j}^{*})  $$
-$$ \hat{a}_{i}=\sum_{j}\left(\alpha_{ji}\hat{b}_{j}+\beta_{ji}^{*}\hat{b}_{j}^{\dagger}\right),\quad  \hat{b}_{i}=\sum_{j}\left(\alpha_{ij}^{*}\hat{a}_{j}-\beta_{ij}^{*}\hat{a}_{j}^{\dagger}\right) $$
+$$ g_{i}=\sum_{j}(\alpha_{ij}f_{j}+\beta_{ij}f_{j}^{\*}),\quad f_{i}=\sum_{j}(\alpha_{ji}^{\*}g_{j}-\beta_{ji}g_{j}^{\*})  $$
+$$ \hat{a}_{i}=\sum_{j}\left(\alpha_{ji}\hat{b}_{j}+\beta_{ji}^{\*}\hat{b}_{j}^{\dagger}\right),\quad  \hat{b}_{i}=\sum_{j}\left(\alpha_{ij}^{\*}\hat{a}_{j}-\beta_{ij}^{\*}\hat{a}_{j}^{\dagger}\right) $$
 
 - an example: the vacuum state of $f$ seen from $g$:  
 $$\langle 0_{f}|\hat{n}_{gi}|0_{f}\rangle =\sum_{j}|\beta_{ij}|^{2}$$
@@ -68,7 +68,7 @@ where $\sigma_{\epsilon}=g_{\mu]nu}(x_{1}^{\mu}-x_{2}^{\mu})(x_{1}^{\nu}-x_{2}^{
 > The Rindler annihilation operators (i.e. $\hat{b}_{k}^{\pm}$) are necessarily superpositions of Minkowski creation and annihilation operators, so the two vacua cannot coincide.
  
  - a properly set of normalized modes (with $\hat{c}_{k}^{\pm}$ as annihilation operators) suitable for the whole spacetime:  
- $$ h_{k}^{\pm}=\frac{1}{\sqrt{2\sinh(\pi\omega/a)}}\left[e^{\pi\omega/(2a)}g_{k}^{\pm}+e^{-\pi\omega/(2a)}g_{-k}^{\mp *}\right] $$
+ $$ h_{k}^{\pm}=\frac{1}{\sqrt{2\sinh(\pi\omega/a)}}\left[e^{\pi\omega/(2a)}g_{k}^{\pm}+e^{-\pi\omega/(2a)}g_{-k}^{\mp \*}\right] $$
  which share the same vaccum state with that of Minkowski spacetime $|0_{M}\rangle$
  
  - the Minkowski vaccum state seen from Rindler space:  
