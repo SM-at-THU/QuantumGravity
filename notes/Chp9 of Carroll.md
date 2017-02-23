@@ -30,7 +30,7 @@ $$ \frac{D}{d\tau}f\_{i}=-i\omega f\_{i} $$
 
 - Hadamard state (unique singularity structure for the natural vacuum in Minkowski spacetime)  
 $$ G(x\_{1},x\_{2})=\langle\psi|\phi(x\_{1})\phi(x\_{2})|\psi\rangle=\frac{U(x\_{1},x\_{2})}{4\pi^{2}\sigma\_{\epsilon}}+V(x\_{1},x\_{2})\ln\sigma\_{\epsilon}+W(x\_{1},x\_{2}) $$
-where $\sigma\_{\epsilon}=g\_{\mu]nu}(x\_{1}^{\mu}-x\_{2}^{\mu})(x\_{1}^{\nu}-x\_{2}^{\nu})+2i\epsilon(t\_{1}-t\_{2})+\epsilon^{2}$, $U$, $V$ and $W$ are regular at $x\_{1}=x\_{2}$, $U(x,x)=1$.
+where $\sigma\_{\epsilon}=g\_{\mu\nu}(x\_{1}^{\mu}-x\_{2}^{\mu})(x\_{1}^{\nu}-x\_{2}^{\nu})+2i\epsilon(t\_{1}-t\_{2})+\epsilon^{2}$, $U$, $V$ and $W$ are regular at $x\_{1}=x\_{2}$, $U(x,x)=1$.
 
 > It can be shown that the renormalized energy-momentum tensor is well-defined and nonsingular in all Hadamard states, and furthermore that it will be singular in any non-Hadamard state. 
 > If the Hadamard condition is obeyed on some partial Cauchy surface, it will be obeyed everywhere in the domain of dependence.
