@@ -14,7 +14,7 @@ $$ (\phi\_{1},\phi\_{2})=-i\int\_{\Sigma}\left(\phi\_{1}\nabla\_{\mu}\phi\_{2}^{
 
 > What we lost in curved spacetime is any reason to prefer one set of modes over any other.
 > Different observers disagree with each other on how many particles are observed in certain states, due to different sets of modes, i.e. sets of orthonormal solutions of the equation of motion. 
-> ** what we cannot  decide on a natural set of basis modes that all inertial observers would identify as particles. **
+> **what we cannot  decide on a natural set of basis modes that all inertial observers would identify as particles.**
 
 - Bogolubov transformation (between different sets of modes $g$ and $f$) :  
 $$ g\_{i}=\sum\_{j}(\alpha\_{ij}f\_{j}+\beta\_{ij}f\_{j}^{\*}),\quad f\_{i}=\sum\_{j}(\alpha\_{ji}^{\*}g\_{j}-\beta\_{ji}g\_{j}^{\*})  $$
@@ -56,7 +56,7 @@ where $\sigma\_{\epsilon}=g\_{\mu]nu}(x\_{1}^{\mu}-x\_{2}^{\mu})(x\_{1}^{\nu}-x\
  $$ \square\phi=e^{-2a\xi}(-\partial\_{\eta}^{2}+\partial\_{\xi}^{2})\phi=0 $$
  
  - normalized plane wave solutions ($\omega=|k|$):  
- $$ g\_{k}^{\pm}=\frac{1}{\sqrt{4\pi\omega}}e^{\pm i\omega\eta+ik\xi},\quad \text{defined region} $$
+ $$ g\_{k}^{\pm}=\frac{1}{\sqrt{4\pi\omega}}e^{\pm i\omega\eta+ik\xi},\quad \text{in the defined region} $$
  where $-$ is for $x>|t|$ (i.e. defined region outside which the solution is zero), while $+$ for $x<-|t|$. These forms a complete set of basis modes.
 
 > An individual Rindler mode can never be written as a sum of positive-frequency Minkowski modes;
@@ -75,7 +75,7 @@ where $\sigma\_{\epsilon}=g\_{\mu]nu}(x\_{1}^{\mu}-x\_{2}^{\mu})(x\_{1}^{\nu}-x\
  - generally speaking $T=\alpha/(2\pi)$, where $\alpha=ae^{-a\xi}=a/V$
  
 ### The Hawking effect
-> ** Assumption: the  quantum state of some scalar field $\phi$ looks like the Minkowski vacuum (free of any particles) as seen by freely-falling observers near the black hole. ** 
+> **Assumption: the  quantum state of some scalar field $\phi$ looks like the Minkowski vacuum (free of any particles) as seen by freely-falling observers near the black hole.** 
 > The acceleration is very large compared with the scale set by the event horizon, i.e. the scale of spacetime curvature.
 > The vacuum state near the horizon looks nonsingular to freely-falling observers, i.e. the renormalized energy-momentum tensor is taken to be finite at the horizon, or equivalently, the two-point function obeys the Hadamard condition.
 
