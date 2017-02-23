@@ -14,7 +14,7 @@ $$ (\phi\_{1},\phi\_{2})=-i\int\_{\Sigma}\left(\phi\_{1}\nabla\_{\mu}\phi\_{2}^{
 
 > What we lost in curved spacetime is any reason to prefer one set of modes over any other.
 > Different observers disagree with each other on how many particles are observed in certain states, due to different sets of modes, i.e. sets of orthonormal solutions of the equation of motion. 
-> **what we cannot  decide on a natural set of basis modes that all inertial observers would identify as particles. **
+> ** what we cannot  decide on a natural set of basis modes that all inertial observers would identify as particles. **
 
 - Bogolubov transformation (between different sets of modes $g$ and $f$) :  
 $$ g\_{i}=\sum\_{j}(\alpha\_{ij}f\_{j}+\beta\_{ij}f\_{j}^{\*}),\quad f\_{i}=\sum\_{j}(\alpha\_{ji}^{\*}g\_{j}-\beta\_{ji}g\_{j}^{\*})  $$
@@ -57,7 +57,7 @@ where $\sigma\_{\epsilon}=g\_{\mu]nu}(x\_{1}^{\mu}-x\_{2}^{\mu})(x\_{1}^{\nu}-x\
  
  - normalized plane wave solutions ($\omega=|k|$):  
  $$ g\_{k}^{\pm}=\left\{\begin{aligned}
- \frac{1}{\sqrt{4\pi\omega}}e^{\pm i\omega\eta+ik\xi},\quad \text{defined region}\\
+ \frac{1}{\sqrt{4\pi\omega}}e^{\pm i\omega\eta+ik\xi},\quad \text{defined region}\\\\
  0,\quad \text{undefined region} 
  \end{aligned}
  \right.
@@ -110,6 +110,7 @@ $$ \tau\_{BH}=\left(\frac{M}{m\_{P}}\right)^{3}\tau\_{P}\sim\left(\frac{M}{M\_{\
 - nonlocality: the infomation contained in the BH is spread out nonlocally across the horizon  
 holographic principle: \_The number of degrees of freedom in a region of space is not proportional to the volume of the region (as would be expected in a local field theory), but rather to the area of the boundary of the region.\_
 > One can imagine that all of the physical phenomena we observe in the universe could be described by the nonlocal holographic projection of some ordinary nongravitational theory defined in lower dimensions.
+
 ## Supplementary on black holes
  
  
