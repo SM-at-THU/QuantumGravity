@@ -103,7 +103,7 @@ $$ \tau\_{BH}=\left(\frac{M}{m\_{P}}\right)^{3}\tau\_{P}\sim\left(\frac{M}{M\_{\
  - information loss paradox: violation of unitarity
  - String Theory: strong coupled --\> weak coupled, information is preserved in a region near the singularity until late times
 - nonlocality: the infomation contained in the BH is spread out nonlocally across the horizon  
-holographic principle: \_The number of degrees of freedom in a region of space is not proportional to the volume of the region (as would be expected in a local field theory), but rather to the area of the boundary of the region.\_
+holographic principle: _The number of degrees of freedom in a region of space is not proportional to the volume of the region (as would be expected in a local field theory), but rather to the area of the boundary of the region._
 > One can imagine that all of the physical phenomena we observe in the universe could be described by the nonlocal holographic projection of some ordinary nongravitational theory defined in lower dimensions.
 
 ## Supplementary on black holes
