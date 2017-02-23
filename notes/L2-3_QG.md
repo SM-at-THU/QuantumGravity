@@ -1,5 +1,5 @@
 ## Black Hole Thermodynamics
-
+_edited by Liu Boyuan_
 ### The Reissner-Nordstrom BH
 $$ ds^{2}=-f(r)dt^{2}+\frac{1}{f(r)}dr^{2}+r^{2}d\Omega^{2} $$
 $$f(r)=1-\frac{2M}{r}+\frac{Q^{2}}{r^{2}}=\frac{1}{r^{2}}(r-r_{+})(r-r_{-}),\quad r_{\pm}=M\pm\sqrt{M^{2}-Q^{2}}, \quad A_{\mu}dx^{\mu}=-\frac{Q}{r}dt$$
