@@ -56,13 +56,8 @@ where $\sigma\_{\epsilon}=g\_{\mu]nu}(x\_{1}^{\mu}-x\_{2}^{\mu})(x\_{1}^{\nu}-x\
  $$ \square\phi=e^{-2a\xi}(-\partial\_{\eta}^{2}+\partial\_{\xi}^{2})\phi=0 $$
  
  - normalized plane wave solutions ($\omega=|k|$):  
- $$ g\_{k}^{\pm}=\left\{\begin{aligned}
- \frac{1}{\sqrt{4\pi\omega}}e^{\pm i\omega\eta+ik\xi},\quad \text{defined region}\\\\
- 0,\quad \text{undefined region} 
- \end{aligned}
- \right.
- $$
- where $-$ is for $x>|t|$ (as the defined region), while $+$ for $x<-|t|$. These forms a complete set of basis modes.
+ $$ g\_{k}^{\pm}=\frac{1}{\sqrt{4\pi\omega}}e^{\pm i\omega\eta+ik\xi},\quad \text{defined region} $$
+ where $-$ is for $x>|t|$ (i.e. defined region outside which the solution is zero), while $+$ for $x<-|t|$. These forms a complete set of basis modes.
 
 > An individual Rindler mode can never be written as a sum of positive-frequency Minkowski modes;
 > The Rindler annihilation operators (i.e. $\hat{b}\_{k}^{\pm}$) are necessarily superpositions of Minkowski creation and annihilation operators, so the two vacua cannot coincide.
