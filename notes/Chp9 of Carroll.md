@@ -92,6 +92,7 @@ $$ \langle \hat{n}\_{\omega}\rangle= \frac{\Gamma(\omega)}{e^{2\pi(\omega-\mu)/\
  (for scalar fields around a Schwarzschild BH)
  
  - virtual particle pair picture  
+
 > The total energy of the virtual pair must add to zero, but the infailing particle can have a negative energy as viewed from infinity, because the asymptotically-timelike Killing vector is spacelike inside the horizon. **?**
  
 - The existence of event horizon is crucial for Hawking radiation. 
@@ -104,6 +105,7 @@ $$ \tau\_{BH}=\left(\frac{M}{m\_{P}}\right)^{3}\tau\_{P}\sim\left(\frac{M}{M\_{\
  - String Theory: strong coupled --\> weak coupled, information is preserved in a region near the singularity until late times
 - nonlocality: the infomation contained in the BH is spread out nonlocally across the horizon  
 holographic principle: _The number of degrees of freedom in a region of space is not proportional to the volume of the region (as would be expected in a local field theory), but rather to the area of the boundary of the region._
+
 > One can imagine that all of the physical phenomena we observe in the universe could be described by the nonlocal holographic projection of some ordinary nongravitational theory defined in lower dimensions.
 
 ## Supplementary on black holes
