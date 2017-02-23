@@ -92,7 +92,7 @@ $$ \langle \hat{n}\_{\omega}\rangle= \frac{\Gamma(\omega)}{e^{2\pi(\omega-\mu)/\
  (for scalar fields around a Schwarzschild BH)
  
  - virtual particle pair picture  
- > The total energy of the virtual pair must add to zero, but the infailing particle can have a negative energy as viewed from infinity, because the asymptotically-timelike Killing vector is spacelike inside the horizon. **?**
+> The total energy of the virtual pair must add to zero, but the infailing particle can have a negative energy as viewed from infinity, because the asymptotically-timelike Killing vector is spacelike inside the horizon. **?**
  
 - The existence of event horizon is crucial for Hawking radiation. 
 - evaporation:  
