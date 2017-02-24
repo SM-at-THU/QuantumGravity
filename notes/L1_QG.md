@@ -39,8 +39,8 @@ $$\frac{1}{q^{2}+M_{s}^{-2}q^{4}}=\frac{1}{q^{2}}-\frac{1}{q^{2}+M_{s}^{2}}$$
 $$ V(r)=-G_{N}m_{1}m_{2}\left[\frac{1}{r}-\frac{e^{-rM_{s}}}{r}\right]$$
 - loop corrections:  
 $$ \sim \frac{1}{q^{2}}-\frac{1}{M_{s}^{2}}+\frac{1}{q^{2}}\frac{a}{M_{P}^{2}}q^{4}\mathrm{log}\frac{q^{2}}{\Lambda^{2}}\frac{1}{q^{2}}+\cdots $$
-- quantum gravity term: $1/(M_{P}^{2}r^{3})$
-- `Question: Is there a new scale?` ($M_{s}\ll M_{P}$), new UV physics?
+- quantum gravity term: $1/(M\_{P}^{2}r^{3})$
+- `Question: Is there a new scale?` ($M\_{s}\ll M\_{P}$), new UV physics?
 - breakdown: UV-divergent (no "asymptotic safety"**?**)
 
 ### UV completion
@@ -52,7 +52,7 @@ $$ \sim \frac{1}{q^{2}}-\frac{1}{M_{s}^{2}}+\frac{1}{q^{2}}\frac{a}{M_{P}^{2}}q^
 > On the other hand, diffeomorphisms that reach infinity (like, say, a global translation) are physical symmetries.
 > **So apparently, to construct diff-invariant physical observables, we need to tie them to infinity.**
 
-- Weinberg-Witten theorem: _A 4D Lorentz-invariant QFT with a conserved, gauge-invariant stress tensor $T_{\mu\nu}$ cannot have massless particles with spin > 1_
+- Weinberg-Witten theorem: _A 4D Lorentz-invariant QFT with a conserved, gauge-invariant stress tensor $T\_{\mu\nu}$ cannot have massless particles with spin > 1_
 - possibilities:
 > - One is that the graviton appears in the UV theory, along with other degrees of freedom which cure the problems seen in effective field theory. 
 > - The other is that the graviton is an
