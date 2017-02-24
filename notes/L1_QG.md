@@ -52,7 +52,7 @@ $$ \sim \frac{1}{q^{2}}-\frac{1}{M_{s}^{2}}+\frac{1}{q^{2}}\frac{a}{M_{P}^{2}}q^
 > On the other hand, diffeomorphisms that reach infinity (like, say, a global translation) are physical symmetries.
 > **So apparently, to construct diff-invariant physical observables, we need to tie them to infinity.**
 
-- Weinberg-Witten theorem: _A 4D Lorentz-invariant QFT with a conserved, gauge-invariant stress tensor $T\_{\mu\nu}$ cannot have massless particles with spin > 1_
+- Weinberg-Witten theorem: _A 4D Lorentz-invariant QFT with a conserved, gauge-invariant stress tensor_ $T\_{\mu\nu}$ _cannot have massless particles with spin > 1_
 - possibilities:
 > - One is that the graviton appears in the UV theory, along with other degrees of freedom which cure the problems seen in effective field theory. 
 > - The other is that the graviton is an
