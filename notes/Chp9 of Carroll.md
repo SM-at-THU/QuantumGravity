@@ -157,7 +157,7 @@ $$ K\_{\mu}K^{\mu}(r\rightarrow\infty)=-1 $$
 
 - static oberver:
 $$ K^{\mu}=VU^{\mu} $$  
-where $V=-\sqrt{K\_{\mu}K^{\mu}}$ is the redshift factor. Since the conserved energy is $E=-p\_{\mu}K^{\mu}$, and the frequency measured is $\omega=-p\_{\mu}U^{\mu}$, we have $\omega=E/V$, $\lambda\_{2}=V\_{2}\lambda\_{1}/V\_{1}$
+where $V=\sqrt{-K\_{\mu}K^{\mu}}$ is the redshift factor. Since the conserved energy is $E=-p\_{\mu}K^{\mu}$, and the frequency measured is $\omega=-p\_{\mu}U^{\mu}$, we have $\omega=E/V$, $\lambda\_{2}=V\_{2}\lambda\_{1}/V\_{1}$
 
 - acceleration  
 $a^{\mu}=U^{\sigma}\nabla\_{\sigma}U^{\mu}$, $a\_{\mu}=\nabla\_{\mu}\ln V$  
