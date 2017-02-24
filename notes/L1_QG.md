@@ -1,6 +1,6 @@
 #The problem of quantum gravity
 _edited by Liu Boyuan_
-### Rulues
+### Rules
 - The classical action is not renormalizable
 - Gravity as a low-energy effective theory
 - Graviton: massless spin-2 field
