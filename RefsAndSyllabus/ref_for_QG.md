@@ -1,4 +1,4 @@
-# Reference for Quantum Gravity
+﻿# Reference for Quantum Gravity
 
 Provided by Zeng.
 
@@ -109,3 +109,11 @@ Provided by Zeng.
 	- arXiv:1601.05416
 - Holographic representation of local bulk operators
 	- arxiv:hep-th/0606141
+
+## emergent geometry
+
+- Building up spacetime with quantum entanglement
+	- arXiv:1005.3035
+	- brief, elegant and influential paper
+- Sketches of emergent geometry in the gauge/gravity duality
+	- arXiv:1404.7052
