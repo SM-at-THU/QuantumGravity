@@ -42,7 +42,7 @@ $$ S_{BH}\sim 10^{90}\left(\frac{M}{10^{6}M_{\odot}}\right),\quad S_{M}\sim 10^{
 $$ds^{2}=dR^{2}-R^{2}d\eta^{2}(+d\vec{y}^{2})$$
 
 - a patch of Minkowski space with $x>0,\quad |t|<x$ ($x=R\mathrm{cosh}\eta,\quad t=R\mathrm{sinh}\eta$), polar coordinates with $\eta=i\phi$
-- Rindler observer: at fixed $R$, i.e., along an uniformly accelerating trajectory: $dx/dt=\mathrm{tanh}\eta=const.$, sees a horizon at $R=0$
+- Rindler observer: at fixed $R$, i.e., along an uniformly accelerating trajectory, sees a horizon at $R=0$
 - approximate Rindler space near the BH horizon:  
 $$ds^{2}=-f(r)dt^{2}+\frac{dr^{2}}{f(r)}+r^{2}d\Omega^{2},\quad f(r)=1-\frac{2M}{r}$$
 where we make the coordinate change (as $f(r)\rightarrow 0$)
@@ -95,4 +95,69 @@ which is consistent with the entropy formula $S=2\pi Mr_{+}$
  - Unruh vacuum:  singular on the past event horizon (no flux coming in)
  - Boulware vacuum: singular on both the past and future event horizons
 
+### A picture to understand BH radiation
+ - given a timelike killing vector $K^{\mu}$ (normalized at certain point O0 of the static trajectory at infinity or certain point outside the event horizon)
+ - consider a static observer O1 with $U^{\mu}=VK^{\mu}$ the free-falling observer O2 at the same point in the manifold with that corresponds to O1
+ - the acceleration of O1 measured by O2 diverges as they approach the event horizon
+ - **the quantum field seems like the Minkowski vacuum from the point view of O2**
+ - transform from the coordinates R0 of the static oberver O0  to a speical form R2 $(\epsilon,t)$ in which we find that the metric tends to be in the form of Rindler space near the event horizon (this statement is consistent with the assumption made above)  
+ (this is done by expansion of the metric near the horizon)
+ - in this R2, we find O1's motion is specified by $\epsilon(\tau)=\epsilon(t(\tau))\equiv const.$ which means a constant acceleation relative to O2, approximately, **in flat spacetime**, while the horizon corresponds to $\epsilon=0$
+ - the acceleration is just $a_{2}=\kappa/\epsilon$ which indeed diverges as $\epsilon\rightarrow 0$, so O2 will detect Unruh radiation at temperature $T_{2}=a_{2}/(2\pi)$ 
+ - but seen from O0, due to redshift, we have $a_{0}=a_{2}\times \epsilon\alpha$, and $T_{0}=\alpha\kappa/(2\pi)$, where $\alpha\le 1$ is a factor relative to the normalization of $K^{\mu}$ and equals to 1 if O0 is at the infinity
 
+## Supplementary on black holes
+_see Chp3 and 6 of Carroll's_
+### Killing vector
+- vector field for which $ K\_{\nu}p^{\nu} $ is conserved along a geodesic trajectory:  
+$$ p^{\mu}\nabla\_{\mu}(K\_{\nu}p^{\nu})=0,\ i.e.\quad \nabla\_{(\mu}K\_{\nu)}=0 $$  
+The metric is unchanging along the direction of the KIlling vector. If the metric is independent of $x^{\sigma\_{\*}}$, then $\partial\_{\sigma\_{\*}}$ is a KIlling vector.
+
+- Killing vector fields on a manifold are in one-to-one correspondence with continuous symmetries of the metric on that manifold. 
+with geodesic motion.  
+$$ \nabla\_{\mu}\nabla\_{\sigma}K^{\rho}=R^{\rho}\ \_{\sigma\mu\nu}K^{\nu},\quad \nabla\_{\mu}\nabla\_{\sigma}K^{\mu}=R\_{\sigma\nu}K^{\nu},\quad K^{\lambda}\nabla\_{\lambda}R=0 $$
+
+- The existence of a timelike Killing vector implies energy conservation for the entire spacetime:  
+$$ J^{\mu}=K\_{\nu}T^{\mu\nu},\quad \nabla\_{\mu}J^{\mu}=0 $$
+We can define the conserved energy by intergration over a spacelike hypersurface $\Sigma$:
+$$ E=\int\_{\Sigma}J^{\nu}n\_{\nu}\sqrt{\gamma}d^{n-1}x $$ 
+
+### Event horizons
+- An event horizon is a hypersurface separating those spacetime points that are connected to infinity by a timelike path from those that are not.  
+It is the boundary of the causal past of future null infinity, a null hypersurface $\Sigma$ defined by $f(x)=const.$ (the normal vector is null and also tangent to $\Sigma$), a collection of null geodesics $x^{\mu}(\lambda)$ as generators:
+$$ \xi^{\mu}=\frac{dx^{\mu}}{d\lambda}=h(x)g^{\mu\nu}\partial\_{\nu}f,\quad \xi\_{\mu}\xi^{\mu}=0,\quad \xi^{\mu}\nabla\_{\mu}\xi^{\nu}=0 $$  
+(here the function $h(x)$ is chosen so that the geodesic is affinely parameterized)
+
+- for stationary metrics:
+$$ g^{rr}(r\_{H}=0) $$  
+ where
+ $$ g^{\mu\nu}(\partial\_{\mu}r)(\partial\_{\nu})=g^{rr} $$
+
+- cosmic censorship conjecture:
+> Naked singularities cannot form in gravitational collapse from generic, initially nonsingular states in an asymptotically flat space-time obeying the dominant energy condition.
+**generic?**
+
+- area theorem:
+> Assuming the weak energy condition and cosmic censorship, the area of a future event horizon in an asymptotically flat spacetime is non-decreasing.
+
+### Killing horizons
+- If a Killing vector field $\chi^{\mu}$ is null along (also normal to) some null hypersurface $\Sigma$, $\Sigma$ is a Killing horizon of $\chi^{\mu}$
+
+- surface gravity $\kappa$:  
+$$ \chi^{\mu}\nabla\_{\mu}\chi^{\nu}=-\kappa\chi^{\nu} $$
+$$ \kappa^{2}=-\frac{1}{2}(\nabla\_{\mu}\chi\_{\nu})(\nabla^{\mu}\chi^{\nu}) $$
+
+- normalization in an asymptotic spacetime:  
+$$ K\_{\mu}K^{\mu}(r\rightarrow\infty)=-1 $$  
+> In a static, asymptotically flat spacetime, the surface gravity is the acceleration of a static observer near the horizon, as measured by a static observer at infinity.
+
+- static oberver:
+$$ K^{\mu}=VU^{\mu} $$  
+where $V=\sqrt{-K\_{\mu}K^{\mu}}$ is the redshift factor. Since the conserved energy is $E=-p\_{\mu}K^{\mu}$, and the frequency measured is $\omega=-p\_{\mu}U^{\mu}$, we have $\omega=E/V$, $\lambda\_{2}=V\_{2}\lambda\_{1}/V\_{1}$
+
+- acceleration  
+$a^{\mu}=U^{\sigma}\nabla\_{\sigma}U^{\mu}$, $a\_{\mu}=\nabla\_{\mu}\ln V$  
+**?**
+$$ a=\sqrt{a\_{\mu}a^{\mu}}=V^{-1}\sqrt{\nabla\_{\mu}V\nabla^{\mu}V} $$  
+which diverges at the Killing horizon, but seen from outer obervers, we have
+$$ aV=\sqrt{\nabla\_{\mu}V\nabla^{\mu}V}=\kappa $$
