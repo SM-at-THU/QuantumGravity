@@ -97,7 +97,7 @@ which is consistent with the entropy formula $S=2\pi Mr_{+}$
 
 ### A picture to understand BH radiation
  - given a timelike killing vector $K^{\mu}$ (normalized at certain point O0 of the static trajectory at infinity or certain point outside the event horizon)
- - consider a static observer O1 with $U^{\mu}=VK^{\mu}$ the free-falling observer O2 at the same point in the manifold with that corresponds to O1
+ - consider a static observer O1 with $U^{\mu}=VK^{\mu}$ and the free-falling observer O2 at the same point in the manifold with that corresponds to O1
  - the acceleration of O1 measured by O2 diverges as they approach the event horizon
  - **the quantum field seems like the Minkowski vacuum from the point view of O2**
  - transform from the coordinates R0 of the static oberver O0  to a speical form R2 $(\epsilon,t)$ in which we find that the metric tends to be in the form of Rindler space near the event horizon (this statement is consistent with the assumption made above)  
