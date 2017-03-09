@@ -1,0 +1,301 @@
+ \def\CTeXPreproc{Created by ctex v0.2.14, don't edit!}
+
+\documentclass{article}
+
+\usepackage{times}
+\setcounter{page}{1}
+\usepackage{amsmath}
+
+\usepackage{amsfonts,color}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{feynmp}
+\usepackage{empheq}
+\usepackage{mathrsfs}
+\setlength{\textheight}{9.3truein}
+\setlength{\textwidth}{6.75truein}
+\setlength{\topmargin}{-0.75truein}
+\setlength{\oddsidemargin}{-0.1truein}
+\setlength{\evensidemargin}{\oddsidemargin}
+\newdimen\nude\newbox\chek
+\def\slash#1{\setbox\chek=\hbox{$#1$}\nude=\wd\chek#1{\kern-\nude/}}
+\def\up#1{$^{\left.#1\right)}$}
+\def\to{\rightarrow}
+\def\dag{\dagger}
+\def\llgm{\left\lgroup\matrix}
+\def\rrgm{\right\rgroup}
+\def\vectrl #1{\buildrel\leftrightarrow \over #1}
+\def\partrl{\vectrl{\partial}}
+\def\thd{\theta^{\dagger}}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\def\thefootnote{\fnsymbol{footnote}}
+\def\signofmetric{1}
+
+\if0\signofmetric
+%% FOLLOWING ARE FOR THE +--- METRIC.
+\def\BDpos{}
+\def\BDneg{-}
+\def\BDplus{+}
+\def\BDminus{-}
+\def\thetasigmamuthetadagger{\theta\sigma^\mu\theta^\dagger}
+\def\thetasigmamuloweredthetadagger{\theta\sigma_\mu\theta^\dagger}
+\fi
+
+\if1\signofmetric
+%% FOLLOWING ARE FOR THE -+++ METRIC.
+\def\BDpos{-}
+\def\BDneg{}
+\def\BDplus{-}
+\def\BDminus{+}
+\def\thetasigmamuthetadagger{\theta^\dagger\sigmabar^\mu\theta}
+\def\thetasigmamuloweredthetadagger{\theta^\dagger\sigmabar_\mu\theta}
+\fi
+
+\if2\signofmetric
+%% FOLLOWING ARE FOR THE +--- METRIC, but in debugging mode.
+\def\BDpos{\oplus}
+\def\BDneg{\ominus}
+\def\BDplus{\oplus}
+\def\BDminus{\ominus}
+\def\thetasigmamuthetadagger{\theta\sigma^\mu\theta^\dagger}
+\def\thetasigmamuloweredthetadagger{\theta\sigma_\mu\theta^\dagger}
+\fi
+
+\if3\signofmetric
+%% FOLLOWING ARE FOR THE -+++ METRIC, but in debugging mode.
+\def\BDpos{\ominus}
+\def\BDneg{\oplus}
+\def\BDplus{\ominus}
+\def\BDminus{\oplus}
+\def\thetasigmamuthetadagger{\theta^\dagger\sigmabar^\mu\theta}
+\def\thetasigmamuloweredthetadagger{\theta^\dagger\sigmabar_\mu\theta}
+\fi
+
+\newcommand{\dagg}[1]{#1^\dagger}
+\newcommand{\smallnegspacedagger}{\hspace{-0.1pt}}
+\newcommand{\thdthd}{\theta^\dagger\hspace{-1pt}\theta^\dagger}
+\newcommand{\nablasubmu}{\nabla\hspace{-2pt}{}_\mu}
+
+\hyphenation{Ma-j-e-r-o-t-t-o}
+\hyphenation{Ta-ta}
+\hyphenation{Ka-r-a-t-as}
+\hyphenation{La-grang-i-ans}
+
+\def\ba{\begin{aligned}}
+\def\ea{\end{aligned}}
+\def\beq{\begin{eqnarray}}
+\def\eeq{\end{eqnarray}}
+\def\bea{\begin{eqnarray*}}
+\def\eea{\end{eqnarray*}}
+\def\Baryon{{\rm B}}
+\def\Lepton{{\rm L}}
+\def\sbar{\overline}
+\def\stilde{\widetilde}
+\def\sst{\scriptscriptstyle}
+\def\vac{|0\rangle}
+\def\antivac{\langle 0|}
+\def\G{\stilde G}
+\def\Wmess{W_{\rm mess}}
+\def\NI{\stilde N_1}
+\def\nmess{N_5}
+\def\lagr{{\cal L}}
+\def\drbar{\overline{\rm DR}}
+\def\msbar{\overline{\rm MS}}
+\def\conj{{{\rm c.c.}}}
+\def\Et{{\slashchar{E}_T}}
+\def\Etot{{\slashchar{E}}}
+\def\MPlanck{M_{\rm P}}
+\def\cbeta{c_{\beta}}
+\def\sbeta{s_{\beta}}
+\def\cW{c_{W}}
+\def\sW{s_{W}}
+\def\deltaeps{\delta}
+\def\sigmabar{\overline\sigma}
+\def\epsilonbar{\overline\epsilon}
+\def\half{{1\over 2}}
+\def\FX{F}
+\def\Branching{{\rm Br}}
+\def\Splus{S_+}
+\def\Sminus{S_-}
+\def\mAMSB{F_\phi}
+\def\Dcon{\overline D}
+
+\def\centeron#1#2{{\setbox0=\hbox{#1}\setbox1=\hbox{#2}\ifdim
+\wd1>\wd0\kern.5\wd1\kern-.5\wd0\fi
+\copy0\kern-.5\wd0\kern-.5\wd1\copy1\ifdim\wd0>\wd1
+\kern.5\wd0\kern-.5\wd1\fi}}
+\def\ltap{\;\centeron{\raise.35ex\hbox{$<$}}{\lower.65ex\hbox{$\sim$}}\;}
+\def\gtap{\;\centeron{\raise.35ex\hbox{$>$}}{\lower.65ex\hbox{$\sim$}}\;}
+\def\gsim{\mathrel{\gtap}}
+\def\lsim{\mathrel{\ltap}}
+
+%%EXAMPLE:  $\slashchar{E}$ or $\slashchar{E}_{t}$
+\def\slashchar#1{\setbox0=\hbox{$#1$}           % set a box for #1
+   \dimen0=\wd0                                 % and get its size
+   \setbox1=\hbox{/} \dimen1=\wd1               % get size of /
+   \ifdim\dimen0>\dimen1                        % #1 is bigger
+      \rlap{\hbox to \dimen0{\hfil/\hfil}}      % so center / in box
+      #1                                        % and print #1
+   \else                                        % / is bigger
+      \rlap{\hbox to \dimen1{\hfil$#1$\hfil}}   % so center #1
+      /                                         % and print /
+   \fi}                                        %
+
+\setcounter{tocdepth}{2}
+
+\special{! /arrowdown{
+    /nwidth { width 1 add } def
+    newpath
+        0 nwidth 1.875 mul neg moveto         % Arrow is a triangle
+        nwidth 1.5 mul nwidth 3.75 mul rlineto
+        nwidth 3 mul neg 0 rlineto
+        nwidth 1.5 mul nwidth 3.75 mul neg rlineto
+    closepath fill                          % and it is filled
+} def }
+
+\special{! /arrowup{
+    /nwidth { width 1 add } def
+    newpath
+        0 nwidth 1.875 mul moveto             % Arrow is a triangle
+        nwidth 1.5 mul nwidth 3.75 mul neg rlineto
+        nwidth 3 mul neg 0 rlineto
+        nwidth 1.5 mul nwidth 3.75 mul rlineto
+    closepath fill                          % and it is filled
+} def }
+
+\special{! /arrowright{
+    /nwidth { width 1 add } def
+    newpath
+        nwidth 1.875 mul 0 moveto             % Arrow is a triangle
+        nwidth 3.75 mul neg nwidth 1.5 mul rlineto
+        0 nwidth 3 mul neg rlineto
+        nwidth 3.75 mul nwidth 1.5 mul rlineto
+    closepath fill                          % and it is filled
+} def }
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\6{\langle}
+\def\9{\rangle}
+\def\half{\mbox{$1\over2$}}
+\def\bk{{\bf k}}
+\def\bq{{\bf q}}
+\def\bv{{\hat{\bf v}}}
+\def\bw{{\hat{\bf w}}}
+\def\hbk{{\hat\bk}}
+\def\hbq{{\hat\bq}}
+\def\sR{{\cal R}}
+\def\qk{_{\bq\bk}}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{titlesec}
+\begin{document}
+
+\title{ Path integrals, states, and operators in QFT}
+\author{ Note for chapter 4 \\Tianyou Xie}
+\date{\today}
+\maketitle
+
+\abstract{ For further applications to gravity, this chapter will explain the relationship between path integrals and states in quantum field theory. }
+\section{ Transition amplitudes}
+\begin{itemize}
+\item{New perspective to defining state: sec (4.1-4.3) introduce a new approach to define quantum state through Euclidean path integrals. And one can calculate transition amplitudes under evolution by $e^{-\beta H}$. $\beta$ here is the Euclidean time.
+    \beq
+\langle\phi_{2}|e^{-\beta H}|\phi_{1}\rangle=\int^{\phi(\tau=\beta)=\phi_{2}}_{\phi(\tau=0)=\phi_{1}}\mathcal{D} \phi~e^{-S_{E}[\phi]}
+\eeq}
+
+\end{itemize}
+\section{Wavefunctions}
+\begin{itemize}
+\item{The transition amplitudes defines the wavefunction in the Schroedinger picture.
+\beq
+ \psi[\phi_{2}]\equiv \langle\phi_{2}|\Psi\rangle  \qquad\qquad\mbox{where} \quad |\Psi\rangle=|\phi_{1}(\tau)\rangle=e^{-\tau H}|\phi_{1}\rangle
+\eeq
+ }
+\end{itemize}
+\section{Cutting the path integral}
+\begin{itemize}
+\item{ State can be defined by path integral(exactly cutting path integral), which means that one can formally think of a path integral with one set of boundary conditions and one open cut as a quantum state.
+    \beq
+    |\Psi\rangle=e^{-\beta H}|\phi_{1}\rangle \qquad\qquad  |\Psi\rangle=\int^{\phi(\tau=\beta)=??}_{\phi(\tau=0)=\phi_{1}}\mathcal{D}\phi~e^{-S_{E}[\phi]}
+    \eeq
+    }
+\item{One can insert some operators into above path integral to get a different state.
+    \beq
+    |\Psi'\rangle=\hat{O}_{1}(x_1)\hat{O}_{2}(x_2)|\Psi\rangle
+    \eeq
+      }
+    \end{itemize}
+\section{Euclidean vs. Lorentzian}
+\begin{itemize}
+\item{The state can evolve 'forward' in Euclidean time by acting with $e^{-\tau H}$} and can also evolve forward in Lorentzian time by acting with $e^{-iHt}$,
+ \beq
+  |\Psi(t)\rangle=e^{-iHt}|\Psi\rangle
+ \eeq
+ where $|\Psi\rangle=|\Psi(0)\rangle $ was defined by a Euclidean path integral. And the state $|\Psi(t)\rangle$ is a path integral which is part Euclidean, part Lorentzian.
+\end{itemize}
+\section{The ground state}
+\begin{itemize}
+\item{"Evolution in Euclidean time damps excitations." It is means that we can always obtain the lowest energy state by evolving over a long Euclidean time.
+    \beq
+     e^{-\tau H}|Y\rangle\sim e^{-\tau E_{0}}y_{0}|0\rangle   \qquad (\tau\rightarrow \infty)
+    \eeq
+    The ground state defined by path integral is a 'quantum state' with one open cut at the edge.
+}\\~~\\
+\textbf{Question:} In this way, the absolute energy become significant. Because it corresponds to the evolution of the whole quantum states in Euclidean time. And we should carefully choose the ground energy to characterize the vaccum state. What is this zero-point energy?
+\end{itemize}
+\section{Vaccum correlation functions}
+\begin{itemize}
+\item{Glue two vaccum 'state' with cut to obtain transition amplitudes }
+\beq
+\langle 0|0\rangle =\int\mathcal{D}\phi e^{-S_{E}[\phi]}
+\eeq
+One way to depict the gluing of path integrals is to insert the identity:
+\beq
+\langle 0|0\rangle =\sum_{\phi_{1}(\tau=\tau_{0})}\langle 0|\phi_{1}\rangle\langle\phi_{1}|0\rangle
+\eeq
+ \textbf{Question:} note that we calculate the correlation function of two ground state in the same Euclidean time $\tau\rightarrow \infty$,
+  while doing the same thing in Lorentzian signature with two different state(final state and initial state).
+  \item{Expectation values of local operators are computed by similar path integrals, but with extra operator insertions.}
+\item{Time-ordered Lorentzian vaccum correlation functions can be calculated by two equivalent approaches:\\
+ (1)Compute the Euclidean path integral with arbitrary values of the insertion points, then analytically continue to Lorentzian time.\\
+ (2)Use an $i\epsilon $ prescription to compute the Lagrangian path integral, which is a deformation of the integration contour. }
+ \beq
+ \langle
+ O_{1}(t_{1},x_{1})O_{2}(t_{2},x_{2})...
+ \rangle=\langle 0|(e^{iHt_{1}}
+ O_{1}(0,x_{1})e^{-iHt_{1}}e^{iHt_{2}}O_{2}(0,x_{2})e^{-iHt_{2}}...
+ \rangle
+ \eeq
+ \item{Time ordering:\\(No)Correlators computed in Euclidean signature are statistical averages, so they commute just like observables in stat-mech.
+ \beq
+      \langle...
+ O_{1}(t_{1},x_{1})O_{2}(t_{2},x_{2})...
+ \rangle= \langle
+ ...O_{2}(t_{2},x_{2})O_{1}(t_{1},x_{1})...
+ \rangle
+     \eeq
+      (Yes)The correlators computed in Lorentzian signature has branch cuts when $O_{2}$ hits the light-cone of $O_{1}$ , which cause the ambiguity of analytically continuation.
+      \beq
+      \int\mathcal{D}\phi O_{1}(t_{1},x_{1})O_{2}(t_{2},x_{2})e^{iS[\phi]}
+     \eeq }
+\end{itemize}
+\section{Density matrices}
+\begin{itemize}
+\item{Any path integral with two open cuts defines a density matrix}
+\end{itemize}
+\section{Thermal partition function}
+\begin{itemize}
+\item{$\rho=e^{-\beta H}$ is the density matrix in a thermal ensemble at temperature $T=\frac{1}{\beta}$.}\\~~\\
+\textbf{Question:} If there is negative temperature corresponding to the Euclidean time, one can find that state evolved with more positive energy would be divergent.
+\item{Thermal partition function $Z(\beta)=tr e^{-\beta H} $ can be represented by a path integral with periodic boundary conditions.}\\~~\\
+\textbf{Question:} If using the trick that time coordinate became periodic in the imaginary direction, we could obtain the imaginary periodicity $\beta=\frac{1}{T}$. And what is the role of temperature in the Euclidean space?
+\end{itemize}
+\section{Thermal correlators}
+\begin{itemize}
+ \item{Equal-time correlators at finite temperature are defined by path integral on a cylindr $R^{d-1}\times S^{1}$(space is a plane) or
+on $S^{d-1}\times S^{1}$(space is a sphere). }
+\item{Different-time Lorentzian correlators at finite temperature can be calculated by inserting points on the Euclidean space, then analyatically continue.}
+\end{itemize}
+\end{document}

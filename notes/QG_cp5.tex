@@ -1,0 +1,293 @@
+ \def\CTeXPreproc{Created by ctex v0.2.14, don't edit!}
+
+\documentclass{article}
+
+\usepackage{times}
+\setcounter{page}{1}
+\usepackage{amsmath}
+
+\usepackage{amsfonts,color}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{feynmp}
+\usepackage{empheq}
+\usepackage{mathrsfs}
+\setlength{\textheight}{9.3truein}
+\setlength{\textwidth}{6.75truein}
+\setlength{\topmargin}{-0.75truein}
+\setlength{\oddsidemargin}{-0.1truein}
+\setlength{\evensidemargin}{\oddsidemargin}
+\newdimen\nude\newbox\chek
+\def\slash#1{\setbox\chek=\hbox{$#1$}\nude=\wd\chek#1{\kern-\nude/}}
+\def\up#1{$^{\left.#1\right)}$}
+\def\to{\rightarrow}
+\def\dag{\dagger}
+\def\llgm{\left\lgroup\matrix}
+\def\rrgm{\right\rgroup}
+\def\vectrl #1{\buildrel\leftrightarrow \over #1}
+\def\partrl{\vectrl{\partial}}
+\def\thd{\theta^{\dagger}}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\def\thefootnote{\fnsymbol{footnote}}
+\def\signofmetric{1}
+
+\if0\signofmetric
+%% FOLLOWING ARE FOR THE +--- METRIC.
+\def\BDpos{}
+\def\BDneg{-}
+\def\BDplus{+}
+\def\BDminus{-}
+\def\thetasigmamuthetadagger{\theta\sigma^\mu\theta^\dagger}
+\def\thetasigmamuloweredthetadagger{\theta\sigma_\mu\theta^\dagger}
+\fi
+
+\if1\signofmetric
+%% FOLLOWING ARE FOR THE -+++ METRIC.
+\def\BDpos{-}
+\def\BDneg{}
+\def\BDplus{-}
+\def\BDminus{+}
+\def\thetasigmamuthetadagger{\theta^\dagger\sigmabar^\mu\theta}
+\def\thetasigmamuloweredthetadagger{\theta^\dagger\sigmabar_\mu\theta}
+\fi
+
+\if2\signofmetric
+%% FOLLOWING ARE FOR THE +--- METRIC, but in debugging mode.
+\def\BDpos{\oplus}
+\def\BDneg{\ominus}
+\def\BDplus{\oplus}
+\def\BDminus{\ominus}
+\def\thetasigmamuthetadagger{\theta\sigma^\mu\theta^\dagger}
+\def\thetasigmamuloweredthetadagger{\theta\sigma_\mu\theta^\dagger}
+\fi
+
+\if3\signofmetric
+%% FOLLOWING ARE FOR THE -+++ METRIC, but in debugging mode.
+\def\BDpos{\ominus}
+\def\BDneg{\oplus}
+\def\BDplus{\ominus}
+\def\BDminus{\oplus}
+\def\thetasigmamuthetadagger{\theta^\dagger\sigmabar^\mu\theta}
+\def\thetasigmamuloweredthetadagger{\theta^\dagger\sigmabar_\mu\theta}
+\fi
+
+\newcommand{\dagg}[1]{#1^\dagger}
+\newcommand{\smallnegspacedagger}{\hspace{-0.1pt}}
+\newcommand{\thdthd}{\theta^\dagger\hspace{-1pt}\theta^\dagger}
+\newcommand{\nablasubmu}{\nabla\hspace{-2pt}{}_\mu}
+
+\hyphenation{Ma-j-e-r-o-t-t-o}
+\hyphenation{Ta-ta}
+\hyphenation{Ka-r-a-t-as}
+\hyphenation{La-grang-i-ans}
+
+\def\ba{\begin{aligned}}
+\def\ea{\end{aligned}}
+\def\beq{\begin{eqnarray}}
+\def\eeq{\end{eqnarray}}
+\def\bea{\begin{eqnarray*}}
+\def\eea{\end{eqnarray*}}
+\def\Baryon{{\rm B}}
+\def\Lepton{{\rm L}}
+\def\sbar{\overline}
+\def\stilde{\widetilde}
+\def\sst{\scriptscriptstyle}
+\def\vac{|0\rangle}
+\def\antivac{\langle 0|}
+\def\G{\stilde G}
+\def\Wmess{W_{\rm mess}}
+\def\NI{\stilde N_1}
+\def\nmess{N_5}
+\def\lagr{{\cal L}}
+\def\drbar{\overline{\rm DR}}
+\def\msbar{\overline{\rm MS}}
+\def\conj{{{\rm c.c.}}}
+\def\Et{{\slashchar{E}_T}}
+\def\Etot{{\slashchar{E}}}
+\def\MPlanck{M_{\rm P}}
+\def\cbeta{c_{\beta}}
+\def\sbeta{s_{\beta}}
+\def\cW{c_{W}}
+\def\sW{s_{W}}
+\def\deltaeps{\delta}
+\def\sigmabar{\overline\sigma}
+\def\epsilonbar{\overline\epsilon}
+\def\half{{1\over 2}}
+\def\FX{F}
+\def\Branching{{\rm Br}}
+\def\Splus{S_+}
+\def\Sminus{S_-}
+\def\mAMSB{F_\phi}
+\def\Dcon{\overline D}
+
+\def\centeron#1#2{{\setbox0=\hbox{#1}\setbox1=\hbox{#2}\ifdim
+\wd1>\wd0\kern.5\wd1\kern-.5\wd0\fi
+\copy0\kern-.5\wd0\kern-.5\wd1\copy1\ifdim\wd0>\wd1
+\kern.5\wd0\kern-.5\wd1\fi}}
+\def\ltap{\;\centeron{\raise.35ex\hbox{$<$}}{\lower.65ex\hbox{$\sim$}}\;}
+\def\gtap{\;\centeron{\raise.35ex\hbox{$>$}}{\lower.65ex\hbox{$\sim$}}\;}
+\def\gsim{\mathrel{\gtap}}
+\def\lsim{\mathrel{\ltap}}
+
+%%EXAMPLE:  $\slashchar{E}$ or $\slashchar{E}_{t}$
+\def\slashchar#1{\setbox0=\hbox{$#1$}           % set a box for #1
+   \dimen0=\wd0                                 % and get its size
+   \setbox1=\hbox{/} \dimen1=\wd1               % get size of /
+   \ifdim\dimen0>\dimen1                        % #1 is bigger
+      \rlap{\hbox to \dimen0{\hfil/\hfil}}      % so center / in box
+      #1                                        % and print #1
+   \else                                        % / is bigger
+      \rlap{\hbox to \dimen1{\hfil$#1$\hfil}}   % so center #1
+      /                                         % and print /
+   \fi}                                        %
+
+\setcounter{tocdepth}{2}
+
+\special{! /arrowdown{
+    /nwidth { width 1 add } def
+    newpath
+        0 nwidth 1.875 mul neg moveto         % Arrow is a triangle
+        nwidth 1.5 mul nwidth 3.75 mul rlineto
+        nwidth 3 mul neg 0 rlineto
+        nwidth 1.5 mul nwidth 3.75 mul neg rlineto
+    closepath fill                          % and it is filled
+} def }
+
+\special{! /arrowup{
+    /nwidth { width 1 add } def
+    newpath
+        0 nwidth 1.875 mul moveto             % Arrow is a triangle
+        nwidth 1.5 mul nwidth 3.75 mul neg rlineto
+        nwidth 3 mul neg 0 rlineto
+        nwidth 1.5 mul nwidth 3.75 mul rlineto
+    closepath fill                          % and it is filled
+} def }
+
+\special{! /arrowright{
+    /nwidth { width 1 add } def
+    newpath
+        nwidth 1.875 mul 0 moveto             % Arrow is a triangle
+        nwidth 3.75 mul neg nwidth 1.5 mul rlineto
+        0 nwidth 3 mul neg rlineto
+        nwidth 3.75 mul nwidth 1.5 mul rlineto
+    closepath fill                          % and it is filled
+} def }
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\6{\langle}
+\def\9{\rangle}
+\def\half{\mbox{$1\over2$}}
+\def\bk{{\bf k}}
+\def\bq{{\bf q}}
+\def\bv{{\hat{\bf v}}}
+\def\bw{{\hat{\bf w}}}
+\def\hbk{{\hat\bk}}
+\def\hbq{{\hat\bq}}
+\def\sR{{\cal R}}
+\def\qk{_{\bq\bk}}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{titlesec}
+\begin{document}
+
+\title{Path integrals approach to Hawking radiation}
+\author{ Note for chapter 5 \\Tianyou Xie}
+\date{\today}
+\maketitle
+
+\abstract{  Use the Euclidean path integral to justify the claim that the Minkowski vaccum corresponds to the Rindler state $\rho_{Rindler}=e^{-2\pi H}$. 
+Review the concept of entanglement and introduce the Hartle-Hawking state in the end.  }
+
+\section{Rindler Space and Reduced Density Matrices}
+\begin{itemize}
+
+\item{The reduced density matrix $\rho_{A}$ of $\rho=|0\rangle\langle0|$, where $|0\rangle$ is Minkowski vaccum state, is in region A ($x>0$).(For region B, x<0.)
+\beq
+\rho_{A}=tr_{B}\rho
+\eeq }
+\item{Reduced density matrix $\rho_{A}$ can compute all observables restricted to region A.
+\beq
+Tr\rho O(x_{1})...O(x_{n})=Tr\rho_{A}O(x_{1})...O(x_{n}),\qquad\mbox{for}\quad x_{i}>0,\quad|t|<x_{i}
+\eeq
+}
+\item{The path integral of $\rho_{A}$ with two (region A) boundary $\phi_{1},\phi_{2}$ means the sum of all fields in the left Rindler wedge.
+\beq
+\langle\phi_{2}|\rho_{A}|\phi_{1} \rangle=\sum_{\tilde{\phi}}\langle \phi_{2},\tilde{\phi}  | 0  \rangle \langle 0 | \phi_{1},\tilde{\phi}\rangle
+\eeq
+}
+\item{We can re-slice the path integral by going to polar coordinates $dR^{2}+R^{2}d\phi^{2}$, and calling $\phi$ 'time'. Then use the property, that $H_{Rindler}$ can generate $\phi$-evolution  obtain the equation}, to obtain equation we want to at first.
+    \beq
+    \rho_{A}=e^{-2\pi H_{Rindler}}
+    \eeq
+    where $ \partial_\phi=-i \partial_\eta =-ia(x\partial_{t}+t\partial_{x})$ is equivalent to the boost generator in Minkowski space .
+    \item{ In conclusion:the Minkowski vaccum corresponds to the Rindler state $\rho_{Rindler}=e^{-2\pi H_{\eta}}$ through Euclidean path integral.}
+\end{itemize}
+\section{Example:Free fields}
+\begin{itemize}
+\item{Deduce the property of free fields in 2D Rindler space in Lorentz signature and consider massless particles excited from Rindler vaccum state.   }
+\item{Wave function: $\nabla^{\mu}\nabla_{\mu}\Phi=0$. Expand the field operator in terms of creation and annihilation:
+\beq
+\Phi(\eta,R)=\int dk\left( b_{k}\Phi_{k}+b_{k}^{\dagger}\Phi*_{k} \right)
+\eeq
+}
+\item{The Rindler vaccum state is defined by
+\beq
+|0\rangle_{R}=b_{k}|0\rangle_{R}=0,\qquad\qquad  \forall k
+\eeq
+}
+\item{$\qquad\qquad$ time coordinate $\quad\longleftrightarrow\quad$  energy $\quad\longleftrightarrow\quad$   particle  $\quad\longleftrightarrow\quad$  vacuum}
+\item{The number operator $n_{k}=b^{\dagger}_{k}b_{k}$ counts the number of quanta in the mode with Rindler energy $\omega=|k|$.
+\beq\ba
+\langle
+n_{k}\rangle &=\left( \sum_{n \geq 0} n e^{-2\pi n |k|}  \right)/\left( \sum_{n \geq 0}   e^{-2\pi n |k|}  \right)\\
+            &=\frac{1}{e^{2\pi|k|}-1}
+\ea
+\eeq
+This is the Plank blackbody spectrum.
+\item{An accelerating observer with acceleration a would measure the temperature $T_{obs}=\frac{a}{2\pi}$}.
+}
+\item{Transient acceleration:
+The Unruh temperature can be meaningful only in the situation that the acceleration lasts a long time compared to the equilibration timescale
+$t_{a}>t_{equil}\sim 1/T\sim R_{0}$.
+}
+% Question:
+\end{itemize}
+\section{Importance of entanglement}
+\begin{itemize}
+\item{In the Rindler vaccum, there are no correlation between fields in the left and right Rindler wedges:
+\beq
+\langle 0|\phi(x_{1})\phi(x_{2})|0\rangle_{R}=0 \qquad\qquad \mbox{for} \quad x_{1}\in R_{left},\qquad x_{2}\in R_{right}
+\eeq
+}
+\item{The key to obtaining a finite energy density on the Rindler horizon is to have a lot of entanglement between the left and right Rindler wedges.}\\~~\\
+
+\end{itemize}
+\section{Hartle-Hawking state}
+\begin{itemize}
+\item{ Define a state prepared by a path integral on the analytically continued Euclidean spacetime with the imaginary-time $\tau\sim\tau+\beta$.     }
+\item{Euclidean path integral prepares an entangled state on $\tilde{M}\times M$ or equivalently on the two-sided Lorentzian spacetime, which reduced to the Hartle-Hawking thermal state by mixing the right half of the conformal diagram. The reduced matrix is
+    \beq
+    \rho_{HH}=e^{-\beta H}
+    \eeq}\\
+    \textbf{Question:} What is the physical meaning of the quantum states mixed on our living spaces? And can we find some indication of quantum state living on the left half of the conformal diagram? Or it means that we average the effect of the other quantum state?\\
+\textbf{Question:} How to know the state on our spacetime is entangled with the other state in the other half of conformal diagram?
+\item{H is the ordinary Minkowski Hamiltonian associated to time translations $\partial_{t}$.}
+\item{\textbf{Greybody factors:}The Hawking emission measured at infinite should be corrected by absorption cross-section $\sigma_{abs}(k)$.
+\beq
+\langle
+n_{k}
+\rangle=\frac{1}{e^{\beta\omega}-1}\sigma_{abs}(k)
+\eeq}
+%The Hartle-Hawking vaccum is time-independent, which means the flux of outgoing Hawking radiation is equal to the flux
+ %of in going radiation. So
+\end{itemize}
+\section{Aside:Cosmology}
+\begin{itemize}
+\item{The state of quantum fields during inflation is responsible for present-day observables. }
+\item{'Euclidean vaccum' is the state prepared by a Euclidean path integral on the hemisphere, cut along the equator.}\\~~\\
+\textbf{Question:} Why is on the hemisphere? How to observe this kind of quantum state? The same problem is on the Hartle-Hawking state.
+\end{itemize}
+
+\end{document}
