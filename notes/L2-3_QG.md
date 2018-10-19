@@ -109,29 +109,28 @@ which is consistent with the entropy formula $S=2\pi Mr_{+}$
 ## Supplementary on black holes
 _see Chp3 and 6 of Carroll's_
 ### Killing vector
-- vector field for which $ K\_{\nu}p^{\nu} $ is conserved along a geodesic trajectory:  
-$$ p^{\mu}\nabla\_{\mu}(K\_{\nu}p^{\nu})=0,\ i.e.\quad \nabla\_{(\mu}K\_{\nu)}=0 $$  
-The metric is unchanging along the direction of the KIlling vector. If the metric is independent of $x^{\sigma\_{\*}}$, then $\partial\_{\sigma\_{\*}}$ is a KIlling vector.
+- vector field for which $ K_{\nu}p^{\nu} $ is conserved along a geodesic trajectory:  
+$$ p^{\mu}\nabla_{\mu}(K_{\nu}p^{\nu})=0,\ i.e.\quad \nabla_{(\mu}K_{\nu)}=0 $$  
+The metric is unchanging along the direction of the KIlling vector. If the metric is independent of $x^{\sigma_{*}}$, then $\partial_{\sigma_{*}}$ is a KIlling vector.
 
 - Killing vector fields on a manifold are in one-to-one correspondence with continuous symmetries of the metric on that manifold. 
 with geodesic motion.  
-$$ \nabla\_{\mu}\nabla\_{\sigma}K^{\rho}=R^{\rho}\ \_{\sigma\mu\nu}K^{\nu},\quad \nabla\_{\mu}\nabla\_{\sigma}K^{\mu}=R\_{\sigma\nu}K^{\nu},\quad K^{\lambda}\nabla\_{\lambda}R=0 $$
+$$ \nabla_{\mu}\nabla_{\sigma}K^{\rho}=R^{\rho}\ _{\sigma\mu\nu}K^{\nu},\quad \nabla_{\mu}\nabla_{\sigma}K^{\mu}=R_{\sigma\nu}K^{\nu},\quad K^{\lambda}\nabla_{\lambda}R=0 $$
 
 - The existence of a timelike Killing vector implies energy conservation for the entire spacetime:  
-$$ J^{\mu}=K\_{\nu}T^{\mu\nu},\quad \nabla\_{\mu}J^{\mu}=0 $$
+$$ J^{\mu}=K_{\nu}T^{\mu\nu},\quad \nabla_{\mu}J^{\mu}=0 $$
 We can define the conserved energy by intergration over a spacelike hypersurface $\Sigma$:
-$$ E=\int\_{\Sigma}J^{\nu}n\_{\nu}\sqrt{\gamma}d^{n-1}x $$ 
-
+$$ E=\int_{\Sigma}J^{\nu}n_{\nu}\sqrt{\gamma}d^{n-1}x $$
 ### Event horizons
 - An event horizon is a hypersurface separating those spacetime points that are connected to infinity by a timelike path from those that are not.  
 It is the boundary of the causal past of future null infinity, a null hypersurface $\Sigma$ defined by $f(x)=const.$ (the normal vector is null and also tangent to $\Sigma$), a collection of null geodesics $x^{\mu}(\lambda)$ as generators:
-$$ \xi^{\mu}=\frac{dx^{\mu}}{d\lambda}=h(x)g^{\mu\nu}\partial\_{\nu}f,\quad \xi\_{\mu}\xi^{\mu}=0,\quad \xi^{\mu}\nabla\_{\mu}\xi^{\nu}=0 $$  
+$$ \xi^{\mu}=\frac{dx^{\mu}}{d\lambda}=h(x)g^{\mu\nu}\partial_{\nu}f,\quad \xi_{\mu}\xi^{\mu}=0,\quad \xi^{\mu}\nabla_{\mu}\xi^{\nu}=0 $$  
 (here the function $h(x)$ is chosen so that the geodesic is affinely parameterized)
 
 - for stationary metrics:
-$$ g^{rr}(r\_{H}=0) $$  
+$$ g^{rr}(r_{H}=0) $$  
  where
- $$ g^{\mu\nu}(\partial\_{\mu}r)(\partial\_{\nu})=g^{rr} $$
+ $$ g^{\mu\nu}(\partial_{\mu}r)(\partial_{\nu})=g^{rr} $$
 
 - cosmic censorship conjecture:
 > Naked singularities cannot form in gravitational collapse from generic, initially nonsingular states in an asymptotically flat space-time obeying the dominant energy condition.
@@ -144,20 +143,20 @@ $$ g^{rr}(r\_{H}=0) $$
 - If a Killing vector field $\chi^{\mu}$ is null along (also normal to) some null hypersurface $\Sigma$, $\Sigma$ is a Killing horizon of $\chi^{\mu}$
 
 - surface gravity $\kappa$:  
-$$ \chi^{\mu}\nabla\_{\mu}\chi^{\nu}=-\kappa\chi^{\nu} $$
-$$ \kappa^{2}=-\frac{1}{2}(\nabla\_{\mu}\chi\_{\nu})(\nabla^{\mu}\chi^{\nu}) $$
+$$ \chi^{\mu}\nabla_{\mu}\chi^{\nu}=-\kappa\chi^{\nu} $$
+$$ \kappa^{2}=-\frac{1}{2}(\nabla_{\mu}\chi_{\nu})(\nabla^{\mu}\chi^{\nu}) $$
 
 - normalization in an asymptotic spacetime:  
-$$ K\_{\mu}K^{\mu}(r\rightarrow\infty)=-1 $$  
+$$ K_{\mu}K^{\mu}(r\rightarrow\infty)=-1 $$  
 > In a static, asymptotically flat spacetime, the surface gravity is the acceleration of a static observer near the horizon, as measured by a static observer at infinity.
 
 - static oberver:
 $$ K^{\mu}=VU^{\mu} $$  
-where $V=\sqrt{-K\_{\mu}K^{\mu}}$ is the redshift factor. Since the conserved energy is $E=-p\_{\mu}K^{\mu}$, and the frequency measured is $\omega=-p\_{\mu}U^{\mu}$, we have $\omega=E/V$, $\lambda\_{2}=V\_{2}\lambda\_{1}/V\_{1}$
+where $V=\sqrt{-K_{\mu}K^{\mu}}$ is the redshift factor. Since the conserved energy is $E=-p_{\mu}K^{\mu}$, and the frequency measured is $\omega=-p_{\mu}U^{\mu}$, we have $\omega=E/V$, $\lambda_{2}=V_{2}\lambda_{1}/V_{1}$
 
 - acceleration  
-$a^{\mu}=U^{\sigma}\nabla\_{\sigma}U^{\mu}$, $a\_{\mu}=\nabla\_{\mu}\ln V$  
+$a^{\mu}=U^{\sigma}\nabla_{\sigma}U^{\mu}$, $a_{\mu}=\nabla_{\mu}\ln V$  
 **?**
-$$ a=\sqrt{a\_{\mu}a^{\mu}}=V^{-1}\sqrt{\nabla\_{\mu}V\nabla^{\mu}V} $$  
+$$ a=\sqrt{a_{\mu}a^{\mu}}=V^{-1}\sqrt{\nabla_{\mu}V\nabla^{\mu}V} $$  
 which diverges at the Killing horizon, but seen from outer obervers, we have
-$$ aV=\sqrt{\nabla\_{\mu}V\nabla^{\mu}V}=\kappa $$
+$$ aV=\sqrt{\nabla_{\mu}V\nabla^{\mu}V}=\kappa $$
